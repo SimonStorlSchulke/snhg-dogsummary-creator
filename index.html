@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="rendered-form">
+            <div class="formbuilder-text form-group field-text-1661865006579">
+                <label for="text-1661865006579" class="formbuilder-text-label">Untertitel</label>
+                <input oninput="parse()" type="text" class="form-control" name="text-1661865006579" access="false" id="untertitel">
+            </div>
+            <div class="formbuilder-radio-group form-group field-rd-gender">
+                <label for="rd-gender" class="formbuilder-radio-group-label">Geschlecht</label>
+                <div class="radio-group">
+                    <div class="formbuilder-radio">
+                        <input oninput="parse()" name="rd-gender" access="false" id="rd-w" value="weiblich" type="radio" checked="checked">
+                        <label for="rd-gender-0">weiblich</label>
+                    </div>
+                    <div class="formbuilder-radio">
+                        <input oninput="parse()" name="rd-gender" access="false" id="rd-m" value="männlich" type="radio">
+                        <label for="rd-gender-1">männlich</label>
+                    </div>
+                    <div class="formbuilder-radio">
+                        <input oninput="parse()" name="rd-gender" access="false" id="rd-v" value="verschiedene" type="radio">
+                        <label for="rd-gender-2">verschiedene</label>
+                    </div>
+                </div>
+            </div>
+            <div class="formbuilder-number form-group field-number-1661865139">
+                <label for="number-1661865139" class="formbuilder-number-label">Geburtsdatum Jahr</label>
+                <input oninput="parse()" type="number" value="2022" class="form-control" name="number-1661865139" access="false" id="gb-jahr">
+            </div>
+            <div class="formbuilder-number form-group field-number-166186513910">
+                <label for="number-166186513910" class="formbuilder-number-label">Geburtsdatum Monat</label>
+                <input oninput="parse()" type="number" value="0" max="12" min="0" class="form-control" name="number-166186513910" access="false" id="gb-monat">
+            </div>
+            <div class="formbuilder-number form-group field-number-1661865139106">
+                <label for="number-1661865139106" class="formbuilder-number-label">Schulterhöhe ca. in cm</label>
+                <input oninput="parse()" type="number" value="45" class="form-control" name="number-1661865139106" access="false" id="hoehe">
+            </div>
+            <div class="formbuilder-checkbox-group form-group field-checkbox-group-1661865284579">
+                <label for="checkbox-group-1661865284579" class="formbuilder-checkbox-group-label">Checkbox Group</label>
+                <div class="checkbox-group">
+                    <div class="formbuilder-checkbox">
+                        <input oninput="parse()" name="checkbox-group-1661865284579[]" access="false" id="cb-af" value="af" type="checkbox">
+                        <label for="checkbox-group-1661865284579-0">Hat eine Anfrage</label>
+                    </div>
+                    <div class="formbuilder-checkbox">
+                        <input oninput="parse()" name="checkbox-group-1661865284579[]" access="false" id="cb-nf" value="nf" type="checkbox">
+                        <label for="checkbox-group-1661865284579-1">Notfall</label>
+                    </div>
+                    <div class="formbuilder-checkbox">
+                        <input oninput="parse()" name="checkbox-group-1661865284579[]" access="false" id="cb-rs" value="rs" type="checkbox">
+                        <label for="checkbox-group-1661865284579-2">Reserviert</label>
+                    </div>
+                    <div class="formbuilder-checkbox">
+                        <input oninput="parse()" name="checkbox-group-1661865284579[]" access="false" id="cb-ps" value="ps" type="checkbox">
+                        <label for="checkbox-group-1661865284579-4">Pflegestelle gefunden</label>
+                    </div>
+                    <div class="formbuilder-checkbox">
+                        <input oninput="parse()" name="checkbox-group-1661865284579[]" access="false" id="cb-pa" value="pa" type="checkbox">
+                        <label for="checkbox-group-1661865284579-5">Nur Paten (spezielle Hunde)</label>
+                    </div>
+                    <div class="formbuilder-checkbox">
+                        <input oninput="parse()" name="checkbox-group-1661865284579[]" access="false" id="cb-in-d" value="id" type="checkbox">
+                        <label for="checkbox-group-1661865284579-6">In Deutschland</label>
+                    </div>
+                </div>
+            </div>
+            <div class="formbuilder-text form-group field-text-1661865700722">
+                <label for="text-1661865700722" class="formbuilder-text-label">Wo in Deutschland?</label>
+                <input oninput="parse()" type="text" class="form-control" name="text-1661865700722" access="false" id="wo">
+            </div>
+            <div class="formbuilder-text form-group field-text-1661865399978">
+                <label for="text-1661865399978" class="formbuilder-text-label">Custom Thumbnaillabel</label>
+                <input oninput="parse()" type="text" class="form-control" name="text-1661865399978" access="false" id="thumbnaillabel">
+            </div>
+            <div class="formbuilder-textarea form-group field-textarea-1661865562562">
+                <label for="textarea-1661865562562" class="formbuilder-textarea-label">Previewtext (Untertitel für Hund der Woche)</label>
+                <textarea oninput="parse()" type="textarea" class="form-control" name="textarea-1661865562562" access="false" id="previewtext"></textarea>
+            </div>
+            <div class="formbuilder-textarea form-group field-textarea-1661865673250">
+                <label for="textarea-1661865673250" class="formbuilder-textarea-label">Zusammenfassung (nur spezielle Hunde)</label>
+                <textarea oninput="parse()" type="textarea" class="form-control" name="textarea-1661865673250" access="false" id="zusammenfassung"></textarea>
+            </div>
+            <textarea style="width: 100%; height: 300px;" readonly id="output"></textarea>
+        </div>
+  </div>
+
+
+
+<script defer>
+
+    function getVal(id) {
+        return document.getElementById(id).value;
+    }
+
+function parse() {
+    let untertitel = document.getElementById("untertitel").value;
+
+    let genders = document.getElementsByName("rd-gender");
+
+    let gender;
+
+    for(let i = 0; i < genders.length; i++) {
+    if(genders[i].checked)
+        gender = genders[i].value;
+    }
+
+    function pad(num, size) {
+        num = num.toString();
+        while (num.length < size) num = "0" + num;
+        return num;
+    }
+
+    let gb_monat = pad(getVal("gb-monat"), 2);
+    let gb = gb_monat == "00" ? `${getVal("gb-jahr")}` : `${getVal("gb-jahr")}/${pad(getVal("gb-monat"), 2)}`;
+
+
+let vars = "";
+
+if (document.getElementById("cb-af").checked) {
+    vars += "Hat eine Anfrage;\n";
+}
+if (document.getElementById("cb-nf").checked) {
+    vars += "Notfall;\n";
+}
+if (document.getElementById("cb-in-d").checked) {
+    vars += "In D;\n";
+    
+    if (getVal("wo") != "") {
+        vars += getVal("wo") + ";\n";
+    }
+}
+if (document.getElementById("cb-rs").checked) {
+    vars += "Reserviert;\n";
+}
+if (document.getElementById("cb-ps").checked) {
+    vars += "PS;\n";
+}
+if (document.getElementById("cb-pa").checked) {
+    vars += "PA;\n";
+}
+
+if (getVal("thumbnaillabel") != "") {
+    vars += "Label;\n" + getVal("thumbnaillabel") + ";\n";
+}
+
+if (getVal("previewtext") != "") {
+    vars += "preview: " + getVal("previewtext") + ";\n";
+}
+
+let text =
+`${getVal("untertitel")};
+${gender};
+${getVal("hoehe")}cm;
+${gb};
+`;
+
+if (getVal("zusammenfassung") != "") {
+    text += getVal("zusammenfassung") + ";\n";
+}
+
+text += vars;
+
+document.getElementById("output").value = text;
+}
+
+
+</script>
+
+</body>
+</html>
+
+
+<!--
+ein menschenbezogener aber spezieller Rüde;
+männlich;
+2015;
+60cm;
+Zorro kam 2017 ins Tierheim. Er war sehr schwach, abgemagert und krank, seine Augen weiß. Anfangs dachte man, dass er blind wäre, doch Vania gab noch nicht auf und behandelte Tag für Tag seine Wunden und Augen.;
+PA;
+
+-->
