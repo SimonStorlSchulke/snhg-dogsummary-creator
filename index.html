@@ -89,6 +89,9 @@
                 <label for="textarea-1661865673250" class="formbuilder-textarea-label">Zusammenfassung (nur spezielle Hunde)</label>
                 <textarea oninput="parse()" type="textarea" class="form-control" name="textarea-1661865673250" access="false" id="zusammenfassung"></textarea>
             </div>
+            <br>
+            <b>Zusammenfassung:&nbsp;&nbsp; </b>
+            <button class="btn btn-primary" onclick="toClipboard()">Kopieren</button>
             <textarea style="width: 100%; height: 300px;" readonly id="output"></textarea>
         </div>
   </div>
@@ -97,9 +100,15 @@
 
 <script defer>
 
-    function getVal(id) {
-        return document.getElementById(id).value;
-    }
+function getVal(id) {
+    return document.getElementById(id).value;
+}
+
+function toClipboard() {
+    var copyText = document.getElementById("output").value;
+    console.log(copyText);
+    navigator.clipboard.writeText(copyText.value);
+}
 
 function parse() {
     let untertitel = document.getElementById("untertitel").value;
@@ -177,14 +186,3 @@ document.getElementById("output").value = text;
 
 </body>
 </html>
-
-
-<!--
-ein menschenbezogener aber spezieller Rüde;
-männlich;
-2015;
-60cm;
-Zorro kam 2017 ins Tierheim. Er war sehr schwach, abgemagert und krank, seine Augen weiß. Anfangs dachte man, dass er blind wäre, doch Vania gab noch nicht auf und behandelte Tag für Tag seine Wunden und Augen.;
-PA;
-
--->
